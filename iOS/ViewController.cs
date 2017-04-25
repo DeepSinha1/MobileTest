@@ -22,6 +22,11 @@ namespace MobileTest.iOS
 			{
 				var title = string.Format("{0} clicks!", count++);
 				Button.SetTitle(title, UIControlState.Normal);
+
+				if (count == 5)
+				{
+					throw new NotImplementedException();
+				}
 			};
 		}
 
@@ -30,5 +35,7 @@ namespace MobileTest.iOS
 			base.DidReceiveMemoryWarning();
 			// Release any cached data, images, etc that aren't in use.		
 		}
+
+
 	}
 }
