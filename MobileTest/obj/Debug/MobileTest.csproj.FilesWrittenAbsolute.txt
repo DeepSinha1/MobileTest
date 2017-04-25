@@ -1,0 +1,5 @@
+/Users/admin/Documents/Deep/LGS_Project/POC/MobileTest/MobileTest/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile111.AssemblyAttribute.cs
+/Users/admin/Documents/Deep/LGS_Project/POC/MobileTest/MobileTest/bin/Debug/MobileTest.dll.mdb
+/Users/admin/Documents/Deep/LGS_Project/POC/MobileTest/MobileTest/bin/Debug/MobileTest.dll
+/Users/admin/Documents/Deep/LGS_Project/POC/MobileTest/MobileTest/obj/Debug/MobileTest.dll
+/Users/admin/Documents/Deep/LGS_Project/POC/MobileTest/MobileTest/obj/Debug/MobileTest.dll.mdb

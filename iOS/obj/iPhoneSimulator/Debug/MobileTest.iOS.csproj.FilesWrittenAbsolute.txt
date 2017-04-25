@@ -1,0 +1,11 @@
+/Users/admin/Documents/Deep/LGS_Project/POC/MobileTest/iOS/obj/iPhoneSimulator/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/admin/Documents/Deep/LGS_Project/POC/MobileTest/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/ibtool/_BundleResourceWithLogicalName.items
+/Users/admin/Documents/Deep/LGS_Project/POC/MobileTest/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/actool/_PartialAppManifest.items
+/Users/admin/Documents/Deep/LGS_Project/POC/MobileTest/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/actool/_BundleResourceWithLogicalName.items
+/Users/admin/Documents/Deep/LGS_Project/POC/MobileTest/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/optimized/
+/Users/admin/Documents/Deep/LGS_Project/POC/MobileTest/iOS/bin/iPhoneSimulator/Debug/MobileTest.iOS.exe.mdb
+/Users/admin/Documents/Deep/LGS_Project/POC/MobileTest/iOS/bin/iPhoneSimulator/Debug/MobileTest.iOS.exe
+/Users/admin/Documents/Deep/LGS_Project/POC/MobileTest/iOS/obj/iPhoneSimulator/Debug/MobileTest.iOS.exe
+/Users/admin/Documents/Deep/LGS_Project/POC/MobileTest/iOS/obj/iPhoneSimulator/Debug/MobileTest.iOS.exe.mdb
+/Users/admin/Documents/Deep/LGS_Project/POC/MobileTest/iOS/bin/iPhoneSimulator/Debug/MobileTest.dll
+/Users/admin/Documents/Deep/LGS_Project/POC/MobileTest/iOS/bin/iPhoneSimulator/Debug/MobileTest.dll.mdb
