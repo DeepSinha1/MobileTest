@@ -1,5 +1,5 @@
 ﻿using System;
-
+using Microsoft.Azure.Mobile.Analytics;
 using UIKit;
 
 namespace MobileTest.iOS
@@ -20,6 +20,7 @@ namespace MobileTest.iOS
 			Button.AccessibilityIdentifier = "myButton";
 			Button.TouchUpInside += delegate
 			{
+				Analytics.TrackEvent("Button Clicked");
 				var title = string.Format("{0} clicks!", count++);
 				Button.SetTitle(title, UIControlState.Normal);
 

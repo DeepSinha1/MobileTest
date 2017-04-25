@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{4C6D7AEF-46CB-41A9-9233-FD20355F0C42}|Default">
   <MonoDevelop.Ide.ItemProperties.MobileTest.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.24E706CF-E661-4496-94CF-B6B35EA6048D" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/AppDelegate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/ViewController.cs">
     <Files>
       <File FileName="Droid/MainActivity.cs" Line="14" Column="32" />
+      <File FileName="iOS/AppDelegate.cs" Line="1" Column="1" />
       <File FileName="iOS/Info.plist" />
-      <File FileName="iOS/AppDelegate.cs" Line="5" Column="38" />
+      <File FileName="iOS/Main.cs" Line="1" Column="1" />
+      <File FileName="iOS/ViewController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" />
