@@ -21,6 +21,7 @@ namespace MobileTest.iOS
 
 		public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
 		{
+			Analytics.TrackEvent("Button Clicked");
 			// Override point for customization after application launch.
 			// If not required for your application you can safely delete this method
 			MobileCenter.Start("b8d21756-d9b2-423d-890f-9be83347fa10",
