@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{6BBD2E8B-93D7-472E-B8BC-F6EA03330C8F}|Default">
-  <MonoDevelop.Ide.ItemProperties.MobileTest.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.24E706CF-E661-4496-94CF-B6B35EA6048D" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Properties/AndroidManifest.xml">
     <Files>
-      <File FileName="Droid/MainActivity.cs" Line="34" Column="42" />
+      <File FileName="Droid/MainActivity.cs" Line="1" Column="1" />
       <File FileName="iOS/AppDelegate.cs" Line="24" Column="4" />
-      <File FileName="iOS/Info.plist" />
       <File FileName="iOS/Main.cs" Line="1" Column="1" />
-      <File FileName="iOS/ViewController.cs" Line="29" Column="42" />
-      <File FileName="Droid/Properties/AndroidManifest.xml" Line="5" Column="12" />
+      <File FileName="iOS/ViewController.cs" Line="1" Column="1" />
+      <File FileName="Droid/Properties/AndroidManifest.xml" Line="1" Column="1" />
+      <File FileName="MobileTest/MyClass.cs" Line="1" Column="1" />
+      <File FileName="iOS/Info.plist" />
       <File FileName="iOS/Main.storyboard" />
     </Files>
   </MonoDevelop.Ide.Workbench>
