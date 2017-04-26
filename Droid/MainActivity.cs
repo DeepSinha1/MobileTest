@@ -5,6 +5,7 @@ using Microsoft.Azure.Mobile;
 using Microsoft.Azure.Mobile.Analytics;
 using Microsoft.Azure.Mobile.Crashes;
 using System;
+using System.Collections.Generic;
 
 namespace MobileTest.Droid
 {
@@ -25,6 +26,7 @@ namespace MobileTest.Droid
 			// Get our button from the layout resource,
 			// and attach an event to it
 			Button button = FindViewById<Button>(Resource.Id.myButton);
+			Button myTestButton = FindViewById<Button>(Resource.Id.myTestButton);
 
 			button.Click += delegate {
 				Analytics.TrackEvent("Button Click");
@@ -34,6 +36,17 @@ namespace MobileTest.Droid
 					throw new NotImplementedException();
 				}
 			};
+
+			myTestButton.Click += delegate {
+
+				Analytics.TrackEvent("Test Button Click", new Dictionary<string, string>
+				{
+					["Event Name"] = "Button Click",
+					["Button Name"] = myTestButton.Text
+				});
+			};
+
+
 		}
 	}
 }
