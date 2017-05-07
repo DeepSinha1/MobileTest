@@ -4,6 +4,7 @@ using Android.OS;
 using Microsoft.Azure.Mobile;
 using Microsoft.Azure.Mobile.Analytics;
 using Microsoft.Azure.Mobile.Crashes;
+using Microsoft.Azure.Mobile.Distribute;
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -20,7 +21,7 @@ namespace MobileTest.Droid
 			base.OnCreate(savedInstanceState);
 
 			MobileCenter.Start("8d6a239d-6428-4725-a02b-6028645a8560",
-                   typeof(Analytics), typeof(Crashes));
+                   typeof(Analytics), typeof(Crashes),typeof(Distribute));
 			// Set our view from the "main" layout resource
 			SetContentView(Resource.Layout.Main);
 
