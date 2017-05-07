@@ -33,7 +33,7 @@ namespace MobileTest.Droid
 			button.Click += delegate {
 				Analytics.TrackEvent("Button Click");
 				button.Text = $"{count++} clicks!";
-				if (count == 5)
+				if (count == 7)
 				{
 					throw new NotImplementedException();
 				}
