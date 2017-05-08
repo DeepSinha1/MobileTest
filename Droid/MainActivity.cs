@@ -8,6 +8,7 @@ using Microsoft.Azure.Mobile.Distribute;
 using System;
 using System.Collections.Generic;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace MobileTest.Droid
 {
@@ -19,7 +20,7 @@ namespace MobileTest.Droid
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
 			base.OnCreate(savedInstanceState);
-
+			Distribute.ReleaseAvailable = OnReleaseAvailable;
 			MobileCenter.Start("8d6a239d-6428-4725-a02b-6028645a8560",
                    typeof(Analytics), typeof(Crashes),typeof(Distribute));
 			// Set our view from the "main" layout resource
@@ -39,35 +40,47 @@ namespace MobileTest.Droid
 				}
 			};
 
-			myTestButton.Click += delegate {
+			myTestButton.Click += delegate
+			{
 
 				Analytics.TrackEvent("Test Button Click", new Dictionary<string, string>
 				{
-					["Event Name"] = "Button Click",
-					["Button Name"] = myTestButton.Text
+					["Event Name"] = "Button Click For New Changes",
+					["Button Name"] = myTestButton.Text,
+					["Button Height"] = myTestButton.Height.ToString()
 				});
-
-
-			try
-			{
-				var list = new List<byte[]>();
-				while (true)
-				{
-					list.Add(new byte[1024]); // Change the size here.
-					Thread.Sleep(100); // Change the wait time here.
-				}
-			}
-			catch(Exception ex)
-			{
-				throw ex;
-			}
 			};
 
+			
 
 
 
 		}
 
+		bool OnReleaseAvailable(ReleaseDetails releaseDetails)
+		{
+			string versionName = releaseDetails.ShortVersion;
+			string versionCodeOrBuildNumber = releaseDetails.Version;
+			string releaseNotes = releaseDetails.ReleaseNotes;
+			Uri releaseNotesUrl = releaseDetails.ReleaseNotesUrl;
+
+			// custom dialog
+			var title = "Version " + versionName + " available!";
+
+			if (releaseDetails.MandatoryUpdate)
+			{
+				Distribute.NotifyUpdateAction(UpdateAction.Update);
+				return true;
+			}
+			else
+			{
+				Distribute.NotifyUpdateAction(UpdateAction.Postpone);
+				return false;
+			}
+
+		
+
+		}
 
 		bool ShouldProcess(ErrorReport report)
 		{
